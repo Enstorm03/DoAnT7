@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xác nhận đơn hàng</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="topbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="layout.html">thien <span class="badge">Home</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="confirm-container">
+        <h2 class="confirm-title">Xác nhận đơn hàng</h2>
+        
+        <div class="order-details">
+            <h4>Thông tin sản phẩm</h4>
+            <div class="product-info">
+                <div class="product-image">
+                    <img src="img/lovisongb1.png" alt="Lò vi sóng" style="width: 100%;">
+                </div>
+                <div class="product-details">
+                    <h5 id="productName">Lò vi sóng Bosch HMH.BFL523MS0H Series 4</h5>
+                    <p>Giá: <span id="productPrice">5.000.000đ</span></p>
+                    <p>Số lượng: 1</p>
+                    <p>Tổng tiền: <span id="totalPrice">5.000.000đ</span></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="customer-info">
+            <h4>Thông tin khách hàng</h4>
+            <div class="info-row">
+                <div class="info-label">Họ và tên:</div>
+                <div class="info-value" id="customerName"></div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Số điện thoại:</div>
+                <div class="info-value" id="customerPhone"></div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Email:</div>
+                <div class="info-value" id="customerEmail"></div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Địa chỉ giao hàng:</div>
+                <div class="info-value" id="customerAddress"></div>
+            </div>
+            <div class="info-row">
+                <div class="info-label">Ghi chú:</div>
+                <div class="info-value" id="customerNote"></div>
+            </div>
+        </div>
+        
+        <button class="btn-complete" onclick="completeOrder()">Hoàn tất đặt hàng</button>
+    </div>
+
+    <div id="footer">
+        <table>
+            <tr>
+                <td class="footer-title">THÔNG TIN </td>
+                <td class="footer-title">LIÊN HỆ </td>
+                <td class="footer-title">HỖ TRỢ KHÁCH HÀNG </td>
+                <td class="footer-title">KẾT NỐI </td>
+            </tr>
+            <tr>
+                <td class="footer-nd">Công ty ABC <br>
+                    Hỏi đáp <br>
+                    Email: support@abc.com
+                </td> 
+                <td class="footer-nd">
+                    SĐT: 079669XXX <br>
+                    Địa chỉ: TP.HCM <br>
+                    Giờ làm việc: 8:00 - 17:00
+                </td>
+                <td class="footer-nd">
+                    Chính sách <br>
+                    Bảo hành <br>
+                    Giao hàng
+                </td>
+                <td class="footer-nd">
+                    Facebook <br>
+                    Zalo <br>
+                    Instagram
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="js/confirmorder.js"></script>
+</body>
+</html>
